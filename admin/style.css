@@ -1,0 +1,606 @@
+/****** Common - Start ********/
+html {height: 100%;box-sizing: border-box;}
+*,*:before,*:after {  box-sizing: inherit;}
+body {position: relative;margin: 0;padding-bottom: 6rem;min-height: 100%;font-family:  verdana, arial, helvetica, sans-serif !important;}
+.footer{z-index:10; background-color:white ;position: fixed;right: 0;bottom: 0;left: 0;padding: 6px;color: #666867;font-size: 10px;font-family: arial;text-align: center;line-height: 14px;border-top: 1px solid #e6e6e6;margin:0;}
+.footer p{margin: 0;}
+.header{padding: 6px;}
+.header p{text-align: center;}
+.header img{margin: auto;height: 80px;padding-right: 50px;}
+.logo-txt{font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;font-size: 13px;font-weight: bold;color: #292E81;}
+.error-msg{width:100%;display:inline-block;text-align:left;border: 1px dashed red;background-color: #fff9f9;padding: 5px;font-size: 12px;color: red;}
+.alert-msg{width:100%;display:inline-block;text-align:center;border: 1px dashed #bce8f1;background-color: #d9edf7;padding: 5px;font-size: 12px;color: blue;}
+.success-msg{width:100%;display:inline-block;text-align:center; border: 1px dashed green;background-color: #e9ffe9;padding:5px;font-size: 12px;color: green;}
+.success-msg::before { content: "\f00c";font-family: FontAwesome;color: green;padding-right: 5px;}
+.error-msg::before { content: "\f071";font-family: FontAwesome;color: red;padding-right: 5px;}
+.alert-msg::before { content: "\f05a";font-family: FontAwesome;color: blue;padding-right: 5px;}
+#error{color: red;font-size: 12px;}
+#moberror{color: red;font-size: 12px;}
+#phoneerror{color: red;font-size: 12px;}
+#access{text-align: center;color:red;font-family: 'Noto Serif', serif;font-size: 50px; }
+.m-b-15{margin-bottom: 15px;}
+.m-t-15{margin-top:15px;}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input[type=radio] {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+.comment{font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;font-size: 95%;font-weight: bold;color: #292E81;text-align: center;margin:5px;}
+.multiselect-container {height: 200px;overflow-y: scroll;}
+#addfeedata.form-inline .form-group{margin-bottom: 15px !important;}
+table.dataTable tbody th, table.dataTable tbody td{font-size: 14px;}
+.p-l-0{padding-left: 0;}
+.p-r-0{padding-right: 0;}
+.tempchallantbl .dataTables_filter label{margin-top: 7px;}
+.table>thead:first-child>tr:first-child>th{font-size: 14px;}
+
+
+/******** Common - End ********/
+
+/******* Login - Start *******/
+h2.login{text-align:center;color:#3E85C3;font-size: 22px;font-family: verdana, arial, helvetica, sans-serif;font-weight: bold;/*padding-top: 18px;*/}
+.member{font-size: 12px;color: #405c60;line-height: 10px;}
+.sign{background-image:linear-gradient(to bottom, #428bca 0%, #3071a9 100%);margin-right:20px;background-color:rgb(62, 133, 195);font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;color: #fff;font-size:16px;width:30%;border-color: #2d6ca2;}
+.con{padding:0px;border: 1px solid rgba(147,184,189,0.8);background-color:#f7f7f7;box-shadow:0pt 2px 5px rgba(105,108,109,0.7), 0px 0px 8px 5px rgba(208,223,226,0.4) inset;}
+.link{text-decoration:underline;line-height: 10px;color:#3c82bf;font-size:12px;font-family: verdana, arial, helvetica, sans-serif;}
+  input:focus {background-color: #f7f7f7;}
+.lab{color:#265e8e;line-height:1.3;font-family: verdana, arial, helvetica, sans-serif;}
+.bottom{font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;font-size: 14px;font-weight: bold;padding: 10px;color: #292E81;}
+ .h{margin-left:10px; color: #666867;font-size:10px;font-family: arial!important;text-align:center;line-height: 18px;}
+.err{color:red;}
+.checkbox .col-md-6{padding: 0;}
+
+/********** Login - End *********/
+
+/*************CSS FOR ADMIN PAGE - Start*************/
+
+.top {
+    text-align: left;
+    color: #3E85C3;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 23px;
+    font-weight: bold;
+    ;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.status_chunk{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.admintab th{
+    font-size: 13px!important;
+}
+.admintab td{
+    font-size: 10px!important;
+}
+i{
+    font-size: 14px!important;
+}
+
+.dataTables_length{
+    margin-top: 5px;
+}
+
+.admintab {
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: white;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px !important;
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #418ab8;
+    border-right-color: #418ab8;
+    border-bottom-color: #418ab8;
+    border-left-color: #418ab8;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    max-width: 100%;
+}
+
+.admintab.body {
+    font-family: arial;
+    font-size: 14px;
+}
+
+.admintab th {
+    text-align: left;
+    background-color: #b9c9fe;
+    color: #272f7c;
+}
+
+.admintab td,
+th {
+    padding: 0.4em;
+}
+
+.fafa {
+    font-size: 20px !important;
+}
+
+.fafaactive {
+    color: green;
+}
+
+.fafainactive {
+    color: red;
+}
+
+.butt {
+    float: right;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+#error1 {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*************CSS FOR ADMIN PAGE - Start*************/
+
+
+/*@media only screen and (max-width: 768px) {.align .col-xs-2:nth-child(even){text-indent:20px; }.align .col-xs-2:nth-child(odd)}}*/
+/**********MY ACCOUNT - Start***********/
+
+
+/*********Resend Confirmation-Start*******/
+.rescss{text-align: center;color:#3E85C3;font-size: 22px; font-family: verdana, arial, helvetica, sans-serif;font-weight: bold;/*padding-top: 18px;*/}
+.sendnew{font-family: verdana, arial, helvetica, sans-serif;font-size: 11.8px;color: #405c60;padding-top: 0px;padding-right: 2px;padding-bottom: 0px;padding-left: px;line-height: 16px;}
+.blink{font-family: verdana, arial, helvetica, sans-serif;text-decoration: underline;line-height:10px;color: #3c82bf; font-size:12px;}
+.dwn{color: #666867;font-size: 10px;font-family: arial!important;text-align:left;margin-right:-10px;line-height: 22px;}
+.btsend{background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);cursor: pointer;background-color:rgb(62, 133, 195);font-family: "Lucida Sans Unicode", "Lucida Grande",Sans-Serif;color:#fff;font-size:16px;width:30%;border-color: #2d6ca2;}
+.remsend{font-size: 12px;color: #405c60;padding-top: 0px;padding-right: 13px; padding-bottom: 0px;/*padding-left: 18px*/;line-height: 10px;}
+.cons{padding-right:24px;padding-left:20px;border: 1px solid rgba(147,184,189,0.8);background-color:#f7f7f7;box-shadow:0pt 2px 5px rgba(105,108,109,0.7), 0px 0px 8px 5px rgba(208,223,226,0.4) inset;}
+.sendlab{font-family: verdana, arial, helvetica, sans-serif;display: inline-block;margin-bottom: 5px;font-weight: bold;margin-right:5px;color:#265e8e;    position: relative;}
+/*@media only screen and (max-width: 768px) {.resend_box .col-xs-8:nth-child(2){margin-left:30px;width: 60%;}}
+@media only screen and (min-width: 992px) {.resend_box .col-lg-4:nth-child(2){margin-left:-18px;width: 427px;}}
+*//*********Resend Confirmation - End *******/
+
+
+/**********MY ACCOUNT - Start***********/
+.settings{font-size: 13px;line-height: 16px;font-weight: bold;/*margin-left: 20px;*/}
+.settings1{color:#265e8e;font-family: verdana, arial, helvetica, sans-serif;font-size: 13px;line-height: 16px;font-weight: bold;text-indent: 20px;/*margin-left: 20px;*/}
+.bottomnew{font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;font-size:12px;font-weight: bold;padding: 10px;color: #292E81; text-align:center;}
+
+ .ward{
+    background-color: #b9c9fe;
+    color: #272f7c;}
+    .warddata{
+        color: #555;
+    background-color: #e7e7e7;
+    }
+
+/*********MY ACCOUNT - End************/
+
+
+/*ADMIN.PHP START*/
+.signcss{background-image:linear-gradient(to bottom, #428bca 0%, #3071a9 100%);margin-left:9px;background-color:rgb(62, 133, 195);font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;color: #fff;font-size:16px;border-color: #2d6ca2;}
+
+.consadmin{font-family:  verdana, arial, helvetica, sans-serif !important;padding:20px; padding-left:20px;border: 1px solid rgba(147,184,189,0.8);background-color:#f7f7f7;box-shadow:0pt 2px 5px rgba(105,108,109,0.7), 0px 0px 8px 5px rgba(208,223,226,0.4) inset;}
+/*ADMIN.PHP END*/
+
+
+
+/********** Signup - Start **********/
+.heading2 {font-size: 22px;font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;font-weight: bold;text-align: center;color: #3e85c3;padding-top: -5px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}
+.content1 {background: #f7f7f7;border: 1px solid rgba(147,184,189,0.8);-webkit-box-shadow: 0pt 2px 5px rgba(105,108,109,0.7),0px 0px 8px 5px rgba(208,223,226,0.4) inset;-moz-box-shadow: 0pt 2px 5px rgba(105,108,109,0.7),0px 0px 8px 5px rgba(208,223,226,0.4) inset;box-shadow: 0pt 2px 5px rgba(105,108,109,0.7), inset 0px 0px 8px 5px rgba(208,223,226,0.4);-webkit-box-shadow: 5px;-moz-border-radius: 5px;border-radius: 5px;padding-top: 5px;padding-right: 18px;padding-bottom: 5px;padding-left: 18px;/*padding-top: 10px;padding-right: 18px;padding-bottom: 18px;padding-left: 18px;*/margin-right: auto;margin-bottom: 0px;margin-left: auto;/*width: 40%;*/}
+/*p.button input {width: 30%;cursor: pointer;background: #3e85c3;font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;color: #fff;font-size: 16px;background-image: linear-gradient(to bottom, #428bca 50%, #3071a9 100%);background-repeat: repeat-x;border-color: #2d6ca2;cursor: pointer;} */
+#user_registered label {color: #265e8e;position: relative;max-width: 100%}
+#user_registered label {display: inline-block;margin-bottom: 5px;font-family:verdana, arial, helvetica, sans-serif;font-weight: bold;font-size: 12px;line-height: 16px;margin-right: 5px;}
+#user_registered input:not([type="checkbox"]) {border: 1px solid #b2b2b2;-webkit-box-shadow: 0px 1px 4px 0px rgba(168,168,168,0.6) inset;-moz-box-shadow: 0px 1px 4px 0px rgba(168,168,168,0.6) inset;box-shadow: 0px 1px 4px 0px rgba(168,168,168,0.6) inset;-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;cursor: pointer;}
+/*p.button input {width: 40%;cursor: pointer;background: #3e85c3;font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;color: #fff;background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);background-repeat: repeat-x;border-color: #2d6ca2;font-size: 16px;}     */
+/*.lgn{font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;color: #fff;background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);background-repeat: repeat-x;border-color: #2d6ca2;font-size: 16px;width: 35%;height: 40px;cursor: pointer;text-align: center;}*/
+.lgn{background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);background-color:rgb(62, 133, 195);font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;color: #fff;font-size:16px;width:30%;border-color: #2d6ca2;}
+.note1{color: #666867; font-size:9px; font-family: arial !important;line-height: 18px;text-align: left;}
+.note1 a {color: #3c82bf; font-size:9px; font-family: arial !important;line-height: 18px;text-align: left;}
+.note3{margin-left:10px;color: #666867; font-size:9px; font-family: arial !important;line-height: 18px;text-align: left;}
+.note3 a {margin:0px;color: #3c82bf; font-size:9px; font-family: arial !important;line-height: 18px;text-align: left;}
+.content1 a:-webkit-any-link {cursor: pointer;color: #3c82bf;text-decoration: underline;font-size: 12px;}
+.note2{text-decoration:underline;color:#3c82bf; font-size: 9px; font-family: arial !important;line-height: 18px;text-align: left;}
+/*p.login.button, p.signin.button {text-align: right;margin: 5px 0;cursor: pointer;}*/
+#user_registered input:focus, textarea:focus, select:focus {outline-offset: -2px;}user agent stylesheet:focus {outline: -webkit-focus-ring-color auto 5px;}
+#user_registered input {background-color: white;-webkit-rtl-ordering: logical;cursor: text;border-width: 2px;border-style: inset;border-color: initial;border-image: initial;}
+#user_registered user agent stylesheetinput, textarea, select, {text-rendering: auto;color: initial;letter-spacing: normal;word-spacing: normal;text-transform: none;text-indent: 0px;text-shadow: none;display: inline-block;text-align: start;margin: 0em;/*font: 400 13.3333px Arial;*/padding-top: 5px;padding-right: 0px;padding-bottom: 10px;padding-left: 0px;}
+#user_registered input, textarea, select, meter, progress {-webkit-writing-mode: horizontal-tb !important;cursor: pointer;}
+#user_registered input:not([type="checkbox"]):active,input:not([type="checkbox"]):focus {border: 1px solid rgba(91,90,90,0.7);background: rgba(238,236,240,0.2);-webkit-box-shadow: 0px 1px 4px 0px rgba(168,168,168,0.9) inset;-moz-box-shadow: 0px 1px 4px 0px rgba(168,168,168,0.9) inset;box-shadow: 0px 1px 4px 0px rgba(168,168,168,0.9) inset;}
+.onlinepay{font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;font-size: 95%;font-weight: bold;color: #292E81;text-align: center;}
+#message {display:none;background: #f1f1f1;color: #000;position: relative;padding: 10px;margin-top: 10px;}
+#message p {padding: 0px 35px;font-size: 10px;}
+.valid {color: green !important;}
+.valid:before {position: relative;left: -35px;content: "✔";}
+.invalid {color: red !important;}
+.invalid:before {position: relative;left: -35px;content: "✖";}
+@media only screen and (max-width: 900px) {.content1{margin-left: auto !important;}}
+.link1{text-decoration:underline;line-height: 16px;color:#3c82bf;font-size:12px;}
+span.alert-info {color: blue;background-color: #d9edf7;border-color: #bce8f1;padding-top: 5px;padding-bottom: 5px;text-align: center;}
+
+/*********** Signup - End***********/
+
+/***********START OF CSS FOR FORGOT PASSWORD PAGE AND RESEND UNLOCK INSTRUCTIONS*********************/
+.content{background: #f7f7f7;border: 1px solid rgba(147,184,189,0.8);box-shadow: 0pt 2px 5px rgba(105,108,109,0.7), 0px 0px 8px 5px rgba(208,223,226,0.4) inset;border-radius: 5px;padding-top: 10px;padding-right: 18px;padding-bottom: 5px;padding-left: 18px;margin-top: 10px;margin-right: auto;margin-bottom: 5px;margin-left: -17px;width:400px;}
+.heading{font-size: 22px;font-family: verdana, arial, helvetica, sans-serif;font-weight: bold;text-align: center;color: #3E85C3;padding-top: 10px;padding-right: 0;padding-bottom: 10px;padding-left: 0;}
+.main{}
+.main p{font-size: 12px;color: #405c60;padding-top: 0px;padding-right: 10px;padding-bottom: 0px;padding-left: 10px;line-height: 16px;}
+.main a{color: #3c82bf;text-decoration: underline;}
+.lab{color: #265e8e;position: relative;display: inline-block;margin-bottom: 5px;font-weight: bold;margin-right: 5px;}
+.buttoncolor{width: 30%;cursor: pointer;background: #3e85c3;font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;color: #fff;font-size: 16px;border-color: #2d6ca2;background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);background-repeat: repeat-x;}
+.buttonalign{padding-right: 17px;}
+.note{color: #666867;font-size: 10px;font-family: arial !important;text-align: center;line-height: 18px;padding-left: 8px;margin-top: 30px;}
+.notes1{text-decoration:underline;color: #3c82bf;}
+.bottom{font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;font-size: 95%;font-weight: bold;color: #292E81;text-align: center;}
+input:focus {background: #f7f7f7;color: black;border: 1px solid #7f7878 !important;box-shadow: 0px 1px 4px 0px rgba(168,168,168,0.6) inset !important;}
+@media only screen and (max-width: 500px) {.content{width:100%;}.buttonalign{padding-right: 8px;}}
+@media only screen and (max-width: 1200px) {.content{margin-left: auto !important;}}
+/*********** END OF CSS FOR FORGOT PASSWORD PAGE AND RESEND UNLOCK INSTRUCTIONS*********************/
+
+/*********** STARTOF CSS FOR CHANGE PASSWORD*********************/
+.down{margin-bottom: -29px;}
+/*********** END OF CSS FOR CHANGE PASSWORD*********************/
+
+
+/********* Verify Email - Start ********/
+.verifyemail{text-align:center;}
+.verifyemail .expired{color: red;}
+.verifyemail .verified{color: green;}
+/********* Verify Email - End********/
+
+/*********NAVBAR Start*************/
+.navbar-default .navbar-nav > li.dropdown:hover > a,.navbar-default .navbar-nav > li.dropdown:hover > a:hover,.navbar-default .navbar-nav > li.dropdown:hover > a:focus {background-color: rgb(231, 231, 231);color: rgb(85, 85, 85);}
+.navbar .dropdown-menu > li > a{color:white;}
+.navbar-default{background-color:#292E81 !important;color:white;border-radius: 0px;}
+.navbar-default .navbar-brand{color: white;}
+.navbar-default .navbar-brand:hover {color: white;}
+.navbar-brand {float: left;padding: 15px 15px;font-size: 18px;line-height: 20px;}
+.navbar-brand, .navbar-nav>li>a {text-shadow: 0 1px 0 rgba(255,255,255,0.25);}
+.navbar-default .navbar-nav>li>a {color:white;}
+.navbar-default .navbar-nav>li>a:hover {color: white;}
+.icons{font-size:16px;}
+.navbar .dropdown-toggle {/*background-color: #4CAF50;*/color: white;padding: 16px;border: none;}
+/*.navbar .dropdown {position: relative;display: inline-block;}*/
+.navbar .dropdown-menu {display: none;position: absolute;background-color: #292E81;min-width: 100%;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;padding-top: 0;padding-bottom: 0;}
+.navbar .dropdown-menu a {color: black;/* padding: 12px 16px; */text-decoration: none;display: block;}
+
+
+
+.navbar .dropdown-menu a:hover {background-color: #ddd;color: #555;}
+
+.navbar .dropdown:hover .dropdown-menu {display: block;}
+.navbar .dropdown-menu>li>a{padding:7px 20px;}
+.navbar-nav>li>a{padding-bottom: 17px;}
+
+/*********NAVBAR End************/
+
+.page-txt{font-family: font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;margin-top:0;border-top:1px solid #323d7e29;border-bottom:1px solid #323d7e29;padding-left:15px; color:#22263eba;} 
+
+/******** home.php ******/
+
+.jumbotron h4{text-transform: uppercase;}
+.jumbotron ul li{margin-bottom: 8px;}
+.jumbotron .checkbox{margin-left: 20px;}
+.jumbotron p{font-size: 12px;}
+
+.mandatory{
+    color:red;
+    font-size:15px;
+    margin:2px;
+    /*padding-bottom: 10px;*/
+}
+
+/*********SIDEBAR Start************/
+
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+  margin-top:0;
+  font-family:  verdana, arial, helvetica, sans-serif !important;
+  margin-top: 170px;
+  /*background-color: red;*/
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 290px;
+  background: #292E81;
+  position: fixed;
+  height: 100%;
+  /*overflow-y: auto;*/
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+
+}
+
+#wrapper.active {
+  padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  height:100%;
+}
+
+
+
+.sidebar-nav {
+  position: relative;
+  top: 0;
+  width: 290px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 6px;
+  font-family:  verdana, arial, helvetica, sans-serif !important;
+
+}
+
+.sidebar-nav li a i span{
+    font-family:  verdana, arial, helvetica, sans-serif !important;
+    font-style: initial;
+}
+/*.sidebar-nav li a i:before {
+  position: absolute;
+  left: 0;
+  color: #41484c;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+  font-size:17px;
+}*/
+
+.sidebar-nav li a:hover,
+.sidebar-nav li:hover,
+.sidebar-nav li.active {
+  color: black;
+  background: #eee;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+  color: black;
+  background: #eee;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: black;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: black;
+  background: #888;
+}
+
+
+
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+  margin-bottom:0;
+}
+
+#menu-toggle {
+    text-decoration: none;
+    
+}
+
+.btn-menu {
+  color: #000;
+} 
+
+#mainbody {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+label{
+    color:#265e8e;
+}
+fieldset {
+    padding: .35em .625em .750em;
+    margin: 0 20px;
+    width:100%;
+    border: 1px solid #9e9e9e;
+    box-shadow:1px 1px 1px 1px #ded0d0;
+}
+legend {
+    display: block;
+    width: auto;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border:2px solid #292E81;
+    background: #292E81;
+    color:white;
+
+}
+
+#cancelbtn{
+    background-color: white
+    border:black;
+}
+#subbtn{
+    /*background-color: #292E81;*/
+    display: inline;
+    border:black;
+}
+#yearsize{
+    font-size:15px;
+    margin-top:7px;
+}
+.page-header {
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    background: #fff;
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+.sideheading{
+    text-decoration: underline;
+    color:#265e8e;
+    margin-left:0px;
+}
+.addsibling{
+    border:2px solid #292E81;
+    /*padding:0px;*/
+    margin:5px;
+    margin-top:13px;
+    font-size: 20px;
+    text-align: center;
+}
+.removesibling{
+    border:2px solid #292E81;
+    /*padding:0px;*/
+    margin:5px;
+    margin-top:13px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*#subbtn{
+    display:inline-block;
+}*/
+
+.imgpreview{
+    height:80px;
+    width:80px;
+    /*border:2px solid #292E81;*/
+}
+
+@media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: 250px;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: 250px;
+      width: 250px;
+      transition: all 0.4s ease 0s;
+    }
+
+    #menu-toggle {
+      display: inline-block;
+    }
+
+
+
+}
+.page-header {
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    background: #fff;
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+.inset {
+  height:100% !important;
+}
+
+.page-txt span{text-transform: uppercase;font-weight: bold;margin-top: 9px;display: inline-block;}
+
+.admtbl{margin-bottom: 1em;width: 100%;background-color: white;border-top-width: 2px;border-right-width: 2px;border-bottom-width: 2px;border-left-width: 2px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;border-top-color: #418ab8;border-right-color: #418ab8;border-bottom-color: #418ab8;border-left-color: #418ab8;}
+.admtbl th { text-align: left;background-color: #b9c9fe;color: #272f7c;}
+
+.sidebar-nav li.active a{color:black;}
+#outer-circle {background: #52d1f9;border-radius: 50%;height: 20px;width: 20px;position: relative;display: inline-block;border: 1px solid #e8fbfa;}
+#inner-circle {position: absolute;background: #e8fbfa;border-radius: 50%;height: 6px;width: 6px;top: 33%;left: 35%;}
+
+/*********SIDEBAR End************/
+
+
+#personalinfobtn{margin-bottom: 40px;}
+.instructions{color: red;font-size: 9px;}
+.form-horizontal .control-label{text-align: left;}
+#siblinginfobtn{margin-bottom: 40px;}
+.sideheading{text-align: center;text-transform: uppercase;padding-bottom: 15px;}
+label{text-transform: capitalize;}
+.dataTables_wrapper .dataTables_filter input{display: inline-block;width: auto;margin-left: 0}
+.datachunk{font-weight: bold;}
+.datachunk h5{display: inline-block;padding-right: 15px;padding-left: 15px;font-weight: bold;}
+/*.table-responsive{overflow-x: inherit !important;}*/
+/*modal for sending email*/
+#emailmessage{ background: #292E81; color: white;}
+#emailclose{color: white;}
+
+
+/****************Page Loader Start*********************/
+.pageloader {
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 9999; 
+    background: url(../photos/loader.gif) 50% 50% no-repeat rgb(249,249,249); 
+    opacity: .8;
+}
+/****************Page Loader End***********************/
